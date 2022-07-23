@@ -1,0 +1,3 @@
+#!/bin/sh
+
+dbus-launch --sh-syntax --exit-with-session Hyprland
