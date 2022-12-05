@@ -36,7 +36,7 @@ makepkg -si
 	
 ```sh
 echo "### Installing Required Packages"
-paru -S hyprland-git polkit-gnome ffmpeg neovim vienior mpv rofi pavucontrol ranger fzf exa bat starship wl-clipboard wf-recorder swaync swaybg swappy snappy slurp ffmpegthumbnailer tumbler playerctl zscroll
+paru -S hyprland-git polkit-gnome ffmpeg neovim viewnior mpv rofi pavucontrol ranger fzf exa bat starship wl-clipboard wf-recorder swaync swaybg swappy snappy slurp ffmpegthumbnailer tumbler playerctl zscroll
 ```
 
 **If you want a Graphical file-manager*
