@@ -23,12 +23,12 @@ configuration {
 
 window {
     transparency: "real";
-    background-color: #191724;
+    background-color: #1917244D;
     text-color: #6e6a86;
     location: west;
     anchor: west;
-    x-offset: 205px;
-    y-offset: 50px;
+    x-offset: 5px;
+    y-offset: -50px;
     height: 70%;
     width: 350px;
     orientation: vertical;
