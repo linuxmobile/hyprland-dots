@@ -1,15 +1,15 @@
 * **Window Manager** • [Hyprland ](https://github.com/hyprwm/Hyprland)🎨 Tiles Everywhere!
 * **Shell** • [Zsh ](https://www.zsh.org) 🐚 con [starship](https://github.com/starship/starship) Cross Shell Platform!
 * **Terminal** • [WezTerm ](https://github.com/wez/wezterm) 💻 A powerful term with gpu support!
-* **Panel** • [Waybar ](https://github.com/Alexays/Waybar)🍧 Patched waybar following hyprland faq!
-* **Notify Daemon** • [SwayNC ](https://github.com/ErikReider/SwayNotificationCenter) 🍃 Minimalist and functional!
+* **Panel** • [Waybar ](https://aur.archlinux.org/packages/waybar-hyprland-git)🍧 Patched waybar following hyprland faq!
+* **Notify Daemon** • [Dunst ](https://github.com/dunst-project/dunst) 🍃 Minimalist and functional!
 * **Launcher** • [Rofi ](https://github.com/davatorium/rofi) 🚀 Realmente rápido y customizable!
 * **File Manager** • [Ranger ](https://github.com/ranger/ranger)🔖 custom!
-* **GUI Basic-IDE** • [NVIM ](https://github.com/vlagh3/NvChad) Good IDE!
+* **GUI Basic-IDE** • [Nyoom ](https://github.com/nyoom-engineering/nyoom.nvim) Rice IDE!
 
 ## 🌸 Setup
 
-<img src="https://i.imgur.com/U1s3ji7.png">
+<img src="https://i.imgur.com/FXfVoCT.png">
 
 ### Install steps (Take care about it. Isn't a full tutorial)
 <details>
@@ -36,13 +36,13 @@ makepkg -si
 	
 ```sh
 echo "### Installing Required Packages"
-paru -S hyprland-git polkit-gnome ffmpeg neovim viewnior mpv rofi pavucontrol ranger fzf exa bat starship wl-clipboard wf-recorder swaync swaybg swappy snappy slurp ffmpegthumbnailer tumbler playerctl zscroll
+paru -S hyprland-git polkit-gnome ffmpeg neovim viewnior dunst rofi pavucontrol ranger zsh starship wl-clipboard wf-recorder swaybg grimblast-git ffmpegthumbnailer tumbler playerctl noise-suppression-for-voice
 ```
 
 **If you want a Graphical file-manager*
 ```sh
-thunar thunar-volman thunar-archive-plugin 
-ffmpegthumbnailer file-roller gvfs     
+thunar thunar-archive-plugin 
+ffmpegthumbnailer tumbler file-roller gvfs     
 ```
 
 
@@ -85,4 +85,5 @@ _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 © [Ilham25](https://github.com/ilham25)
 © [Siduck](https://github.com/siduck)
 © [NvChad](https://github.com/NvChad) 
-© [Rxyhn](https://github.com/rxyhn) 
+© [Rxyhn](https://github.com/rxyhn)
+© [AmitGold](https://github.com/AmitGolden)
