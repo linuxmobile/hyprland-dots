@@ -97,6 +97,7 @@ tooltip {
     color: #f5c2e7;
     border-left: 0px;
     border-right: 0px;
+    border-radius: 10px 0px 0px 10px;;
 }
 
 #window {
@@ -108,7 +109,7 @@ tooltip {
 #clock {
     color: #fab387;
     border-radius: 10px 0px 0px 10px;
-    margin-left: 0px;
+    margin-left: 5px;
     border-right: 0px;
 }
 
@@ -126,8 +127,8 @@ tooltip {
 
 #pulseaudio.microphone {
     color: #cba6f7;
-    border-left: 0px;
-    border-right: 0px;
+    margin-right: 5px;
+    border-radius: 0 10px 10px 0;
 }
 
 #battery {
