@@ -9,12 +9,14 @@
 
 ## 🌸 Setup
 
-<img src="https://i.imgur.com/FXfVoCT.png">
+<img src="https://i.imgur.com/SRK60r1.png">
 
 ### Install steps (Take care about it. Isn't a full tutorial)
 <details>
 
-<summary><b>Manual</b></summary>
+[Read Spanish Detailed Guide Here](https://aprendiendoaprogramar.netlify.app/configurando-hyprland-y-wayland/)
+
+<summary><b>LONG READ</b></summary>
 
 ### Installation (Paq and deps)
 
@@ -24,7 +26,6 @@
 
 ```sh
 # install paru... 
-echo "### Installing paru as AUR Helper"
 mkdir $HOME/Downloads/_cloned-repos
 cd $HOME/Downloads/_cloned-repos
 git clone https://aur.archlinux.org/paru.git
@@ -32,33 +33,43 @@ cd paru
 makepkg -si  
 ```
 
-#### Install dependencies 📦
+#### Installing needed dependencies 📦
 	
 ```sh
-echo "### Installing Required Packages"
-paru -S hyprland-git polkit-gnome ffmpeg neovim viewnior dunst rofi pavucontrol ranger zsh starship wl-clipboard wf-recorder swaybg grimblast-git ffmpegthumbnailer tumbler playerctl noise-suppression-for-voice
+paru -S hyprland-git polkit-kde-agent dunst grimblast rofi rofi-emoji       \
+wl-clipboard wf-recorder wlogout grimblast-git hyprpicker-git hyprpaper-git \
+xdg-desktop-portal-hyprland-git ffmpegthumbnailer tumbler wtype colord      \
+imagemagick swaylock-effects qt5-wayland qt6-wayland ripgrep
+```
+
+**Extras*
+```sh
+# themes
+paru -S catppuccin-gtk-theme-mocha catppuccin-cursors-mocha catppuccin-mocha-grub-theme-git nwg-look
+
+# apps
+paru -S cava pavucontrol ranger zsh starship neovim viewnior noise-suppression-for-voice
 ```
 
 **If you want a Graphical file-manager*
 ```sh
-thunar thunar-archive-plugin 
-ffmpegthumbnailer tumbler file-roller gvfs     
+thunar thunar-archive-plugin file-roller   
 ```
 
 
-##### Clonamos y Copiamos
+##### Clone Repo
 
 ```sh 
 git clone https://github.com/linuxmobile/hyprland-dots $HOME/Downloads/hyprland-dots/
 cd $HOME/Downloads/hyprland-dots/
-rsync -avxHAXP --exclude '.git*' .* ~/  
+rsync -avxHAXP --exclude '.git*' .* ~/
 ```
 
-##### As fonts i'm using Cartograph CF (patched with nerdfont) It's a licensed font, then select any font you like :3
+#### As fonts i'm using **Cartograph CF** (patched with nerdfont) It's a licensed font, then select any font you like :3
 ```sh
 mkdir -p $HOME/Downloads/nerdfonts/
 cd $HOME/Downloads/
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/2.2.0-RC/CascadiaCode.zip
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.3.1/CascadiaCode.zip
 unzip '*.zip' -d $HOME/Downloads/nerdfonts/
 rm -rf *.zip
 sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
@@ -68,7 +79,7 @@ sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```sh 
 fc-cache -rv  
 ```
-### As gtk theme i'm using [RosePine](https://rosepinetheme.com/)
+### As gtk theme i'm using [Catppuccin](https://github.com/catppuccin/catppuccin)
 
 ## Credits
 
