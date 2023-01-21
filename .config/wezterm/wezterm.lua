@@ -6,16 +6,12 @@ local function font_with_fallback(name, params)
 end
 
 local font_name = "Cartograph CF"
-local colors = require('lua/rose-pine').colors()
-local window_frame = require('lua/rose-pine').window_frame()
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
 
-	color_scheme = 'rose-pine',
-	colors = colors,
-    window_frame = window_frame, -- needed only if using fancy tab bar
+	color_scheme = 'Catppuccin Mocha',
 
 	-- Font config
 	font = font_with_fallback(font_name),
@@ -162,6 +158,7 @@ return {
 	-- General
 	automatically_reload_config = true,
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
-	window_background_opacity = 1.0,
+	window_background_opacity = 0.4,
 	window_close_confirmation = "NeverPrompt",
+  window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
 }
