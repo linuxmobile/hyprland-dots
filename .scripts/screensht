@@ -1,0 +1,152 @@
+#!/bin/bash
+
+set -o pipefail
+
+# Directory
+_SCREENSHOT_DIR_=$HOME/Pictures/Screenshots
+_ORIGINAL_DIR_=$_SCREENSHOT_DIR_/Original
+_LOG_FILE_="$_SCREENSHOT_DIR_/.screensht.log"
+# Color
+_FG_COLOR_='#cdd6f4'
+_BG_COLOR_='#1e1e2e'
+_BG_SIZE_=10
+# Border Size Applied when value greater than or equal 3
+_BORDER_SIZE_=0
+_SHADOW_SIZE_='100x40+0+16'  # [ weight ] x [ radius ] + [ horizontal ] x [ vertical ]
+_ROUNDED_CORNER_=8
+# Author Config
+_AUTHOR_POST_=( 'South' '+0+15' )
+_AUTHOR_NAME_=" $USER"
+_AUTHOR_COLOR_='#b4befe'
+# Get Lists Font With "convert -list font | grep -iE 'font:.*' | nl"
+_FONT_SIZE_=11
+_FONT_='Cartograph-CF-Regular-Nerd-Font-Complete'
+
+function check() {
+    if [[ $? -eq 1 && ${PIPESTATUS[0]} -eq 1 ]]; then
+        _end_job_=$(date +%s)
+        summary $_start_job_ $_end_job_ 'failed' && dunstify -u critical -t 3000 -a "Screenshot Tool" "Screensht" >> $_LOG_FILE_ 2>&1
+        exit 1
+    fi
+}
+
+# Check save directory
+# Create it if it doesn't exist
+function check_dir() {
+	if [[ ! -d "$_SCREENSHOT_DIR_" || ! -d "$_ORIGINAL_DIR_" ]]; then
+		mkdir -p "$_SCREENSHOT_DIR_"
+    	mkdir -p "$_ORIGINAL_DIR_"
+	fi
+}
+
+function get_latest_img() { 
+    _LATEST_IMAGE_=$(/bin/ls -th $_SCREENSHOT_DIR_ | grep -vE '.screensht.png$' | grep -E '.png$' | head -n 1)
+
+    if [[ $( echo "$_LATEST_IMAGE_" | wc -w ) -eq 0 ]]; then
+        exit 1
+    else
+        _LATEST_IMAGE_="$_SCREENSHOT_DIR_/$_LATEST_IMAGE_"
+    fi
+}
+
+function convert() {
+    _target_file_=$( echo "$_LATEST_IMAGE_" | sed 's/.png/.screensht.png/g'  )
+
+    if [[ $_BORDER_SIZE_ -ge 3 ]]; then
+        magick convert "$_LATEST_IMAGE_" \
+            -format 'roundrectangle 1,1 %[fx:w+4],%[fx:h+4] '"$_ROUNDED_CORNER_"','"$_ROUNDED_CORNER_"''\
+            info: > $_SCREENSHOT_DIR_/_rounded_.mvg
+        check
+
+        magick convert "$_LATEST_IMAGE_" -border $_BORDER_SIZE_ -alpha transparent \
+            -background none -fill white -stroke none -strokewidth 0 \
+            -draw "@"$_SCREENSHOT_DIR_"/_rounded_.mvg" $_SCREENSHOT_DIR_/_rounded_mask_.png >> $_LOG_FILE_ 2>&1
+        check
+
+        magick convert "$_LATEST_IMAGE_" -border $_BORDER_SIZE_ -alpha transparent \
+            -background none -fill none -stroke $_FG_COLOR_ -strokewidth $_BORDER_SIZE_ \
+            -draw "@"$_SCREENSHOT_DIR_"/_rounded_.mvg" $_SCREENSHOT_DIR_/_rounded_overlay_.png >> $_LOG_FILE_ 2>&1
+        check
+
+        magick convert "$_LATEST_IMAGE_" -alpha set -bordercolor none -border $_BORDER_SIZE_  \
+            $_SCREENSHOT_DIR_/_rounded_mask_.png -compose DstIn -composite \
+            $_SCREENSHOT_DIR_/_rounded_overlay_.png -compose Over -composite \
+            "$_target_file_" >> $_LOG_FILE_ 2>&1 && \
+        rm -f $_SCREENSHOT_DIR_/_rounded_*
+        check
+    else
+        magick convert "$_LATEST_IMAGE_" \( +clone  -alpha extract -draw 'fill black polygon 0,0 0,'"$_ROUNDED_CORNER_"' '"$_ROUNDED_CORNER_"',0 fill white circle '"$_ROUNDED_CORNER_"','"$_ROUNDED_CORNER_"' '"$_ROUNDED_CORNER_"',0' \
+        \( +clone -flip \) -compose Multiply -composite \
+        \( +clone -flop \) -compose Multiply -composite \
+        \) -alpha off -compose CopyOpacity -composite -compose over "$_target_file_" >> $_LOG_FILE_ 2>&1
+        check
+    fi
+
+    magick convert "$_target_file_" \( +clone -background black -shadow $_SHADOW_SIZE_ \) +swap -background none -layers merge +repage "$_target_file_" >> $_LOG_FILE_ 2>&1 \
+    && magick convert "$_target_file_" -bordercolor $_BG_COLOR_ -border $_BG_SIZE_ "$_target_file_" >> $_LOG_FILE_ 2>&1
+    check
+
+    echo -en "  $_AUTHOR_NAME_  " | magick convert "$_target_file_" -gravity ${_AUTHOR_POST_[0]} -pointsize $_FONT_SIZE_ -fill $_AUTHOR_COLOR_ -undercolor none -font $_FONT_ -annotate ${_AUTHOR_POST_[1]} @- "$_target_file_" \
+    >> $_LOG_FILE_ 2>&1 && magick convert "$_target_file_" -gravity South -chop 0x$(( $_BG_SIZE_ / 2 )) "$_target_file_" >> $_LOG_FILE_ 2>&1
+    check
+
+    magick convert "$_target_file_" -gravity North -background $_BG_COLOR_ -splice 0x$(( $_BG_SIZE_ / 2 )) "$_target_file_" >> $_LOG_FILE_ 2>&1
+    check
+
+    magick convert "$_target_file_" -profile /usr/share/color/icc/colord/sRGB.icc "$_target_file_" >> $_LOG_FILE_ 2>&1
+    check
+}
+
+function summary() {
+    _runtime_job_=$(($2-$1))
+    hours=$((_runtime_job_ / 3600)); minutes=$(( (_runtime_job_ % 3600) / 60 )); seconds=$(( (_runtime_job_ % 3600) % 60 ))
+
+    if [[ $3 != "failed" ]]; then
+        wl-copy < "$_target_file_" >> $_LOG_FILE_ 2>&1
+
+        message="${_notif_message_} Runtime: $hours hours, $minutes minutes, $seconds seconds"
+        dunstify -i "$_target_file_" -t 10000 "Screenshot Tool" "$message" -a "Screenshot Tool"
+    fi
+}
+
+function main() {
+    check_dir
+
+    rm -f $_LOG_FILE_
+    _start_job_=$(date +%s)
+
+	_screenshot_command_="$1"
+	_notif_message_="$2"
+
+    $_screenshot_command_ $_SCREENSHOT_DIR_\/$_start_job_.png> /dev/null 2>&1
+    check
+
+    get_latest_img
+    convert
+
+	mv $_LATEST_IMAGE_ $_ORIGINAL_DIR_
+    
+    _end_job_=$(date +%s)
+    summary $_start_job_ $_end_job_
+}
+
+# Check the args passed
+if [ -z "$1" ] || ([ "$1" != 'full' ] && [ "$1" != 'area' ]);
+then
+	echo "
+	Requires an argument:
+	area 	- Area screenshot
+	full 	- Fullscreen screenshot
+	Example:
+	./screensht area
+	./screensht full
+	"
+elif [ "$1" = 'full' ];
+then
+	msg="Full screenshot saved and copied to clipboard!"
+	main 'grimblast copysave output' "${msg}"
+elif [ "$1" = 'area' ];
+then
+	msg='Area screenshot saved and copied to clipboard!'
+	main 'grimblast copysave area' "${msg}"
+fi
