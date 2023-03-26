@@ -13,7 +13,7 @@
     text_icon_padding = 0
     frame_width = 2
 
-    frame_color = "#89B4FA"
+    frame_color = "#5F332F"
     separator_color = frame
 
     sort = yes
@@ -35,8 +35,8 @@
 
     icon_path = /usr/share/icons/Papirus-Dark/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus-Dark/16x16/actions/:/usr/share/icons/Papirus-Dark/16x16/animations/:/usr/share/icons/Papirus-Dark/16x16/apps/:/usr/share/icons/Papirus-Dark/16x16/categories/:/usr/share/icons/Papirus-Dark/16x16/emblems/:/usr/share/icons/Papirus-Dark/16x16/emotes/:/usr/share/icons/Papirus-Dark/16x16/devices/mimetypes:/usr/share/icons/Papirus-Dark/16x16/panel/:/usr/share/icons/Papirus-Dark/16x16/places/
 
-    dmenu = /usr/bin/wofi -p dunst:
-    browser = /usr/bin/firefox --new-tab
+    dmenu = /usr/bin/rofi -p dunst:
+    browser = /usr/bin/microsoft-edge-beta --new-tab
 
     title = Dunst
     class = Dunst
@@ -45,14 +45,14 @@
     timeout = 5
 
 [urgency_low]
-    background = "#1E1E2E"
-    foreground = "#CDD6F4"
+    background = "#1D2021"
+    foreground = "#5F332F"
 
 [urgency_normal]
-    background = "#1E1E2E"
-    foreground = "#CDD6F4"
+    background = "#1D2021"
+    foreground = "#E8E3E3"
 
 [urgency_critical]
-    background = "#1E1E2E"
-    foreground = "#CDD6F4"
-    frame_color = "#FAB387"
+    background = "#1D2021"
+    foreground = "#AD685A"
+    frame_color = "#DD8F6E"
