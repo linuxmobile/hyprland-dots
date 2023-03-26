@@ -5,11 +5,11 @@
 * **Notify Daemon** • [Dunst ](https://github.com/dunst-project/dunst) 🍃 Minimalist and functional!
 * **Launcher** • [Rofi ](https://github.com/davatorium/rofi) 🚀 Realmente rápido y customizable!
 * **File Manager** • [Ranger ](https://github.com/ranger/ranger)🔖 custom!
-* **GUI Basic-IDE** • [Nyoom ](https://github.com/nyoom-engineering/nyoom.nvim) Rice IDE!
+* **GUI Basic-IDE** • [NvChad-V2 ](https://github.com/linuxmobile/nvchad-v2) Rice IDE!
 
 ## 🌸 Setup
 
-<img src="https://i.imgur.com/SRK60r1.png">
+<img src="https://i.imgur.com/QopB79H.png">
 
 ### Install steps (Take care about it. Isn't a full tutorial)
 <details>
@@ -79,7 +79,7 @@ sudo cp -R $HOME/Downloads/nerdfonts/ /usr/share/fonts/
 ```sh 
 fc-cache -rv  
 ```
-### As gtk theme i'm using [Catppuccin](https://github.com/catppuccin/catppuccin)
+### As gtk theme i'm using [Gruvbox](https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme)
 
 ## Credits
 
