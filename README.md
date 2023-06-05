@@ -36,7 +36,7 @@ makepkg -si
 #### Installing needed dependencies 📦
 	
 ```sh
-paru -S hyprland-git polkit-kde-agent dunst grimblast rofi rofi-emoji       \
+paru -S hyprland-git polkit-kde-agent dunst rofi rofi-emoji       \
 wl-clipboard wf-recorder wlogout grimblast-git hyprpicker-git hyprpaper-git \
 xdg-desktop-portal-hyprland-git ffmpegthumbnailer tumbler wtype colord      \
 imagemagick swaylock-effects qt5-wayland qt6-wayland ripgrep waybar-hyprland-git
@@ -53,7 +53,7 @@ paru -S cava pavucontrol ranger zsh starship neovim viewnior noise-suppression-f
 
 **If you want a Graphical file-manager*
 ```sh
-thunar thunar-archive-plugin file-roller   
+thunar thunar-archive-plugin file-roller
 ```
 
 
