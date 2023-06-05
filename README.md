@@ -53,7 +53,7 @@ paru -S cava pavucontrol ranger zsh starship neovim viewnior noise-suppression-f
 
 **If you want a Graphical file-manager*
 ```sh
-thunar thunar-archive-plugin file-roller   
+thunar thunar-archive-plugin file-roller
 ```
 
 
