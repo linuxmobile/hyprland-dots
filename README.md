@@ -21,6 +21,13 @@
 ### Install steps (Take care about it. Isn't a tutorial)
 
 <details>
+<summary><b>OLD SETUP</b></summary>
+
+<img align="center" src="https://i.imgur.com/QopB79H.png">
+[GRUVxYRLAND](https://github.com/linuxmobile/hyprland-dots/tree/Gruvland)
+</details>
+
+<details>
 
 [Read Spanish Detailed Guide Here](https://aprendiendoaprogramar.netlify.app/configurando-hyprland-y-wayland/)
 
