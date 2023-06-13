@@ -107,6 +107,10 @@ pipewire-jack wireplumber gst-plugin-pipewire pavucontrol
 
 <div align="left">
 
+<details>
+<summary><h3>DOTFILES</h3></summary>
+
+
 ###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Paru as the AUR helper, but keep in mind that your system may require a different approach. 
 
 ```sh
@@ -115,6 +119,7 @@ cd $HOME/Downloads/hyprland-dots/
 rsync -avxHAXP --exclude '.git*' .* ~/
 ```
 
+</details>
 </div>
 
 ## Credits
