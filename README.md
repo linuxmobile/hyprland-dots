@@ -22,6 +22,7 @@
 <summary><b>OLD SETUP</b></summary>
 
 <img align="center" src="https://i.imgur.com/QopB79H.png">
+
 [GRUVxYRLAND](https://github.com/linuxmobile/hyprland-dots/tree/Gruvland)
 </details>
 
