@@ -16,7 +16,7 @@
 
 ## 🌸 Setup
 
-<img src="https://i.imgur.com/QopB79H.png">
+<img align="center" src="/assets/r-unixporn.webp">
 
 ### Install steps (Take care about it. Isn't a tutorial)
 
@@ -41,12 +41,6 @@
 
 ```sh
 ## Hyprland Stuff
-paru -S hyprland-git hyprpicker-git waybar-hyprland-git \
-dunst nwg-look wf-recorder wlogout wlsunset
-```
-
-```sh
-## Related
 paru -S hyprland-git hyprpicker-git waybar-hyprland-git \
 dunst nwg-look wf-recorder wlogout wlsunset
 ```
