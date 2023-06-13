@@ -1,0 +1,186 @@
+
+
+* {
+  /* Default background color */
+  background-color: #282738;
+  text-color:       #E5B9C6;
+  font: "JetBrainsMono Bold 10";
+}
+
+
+window {
+  border-color: #282738;
+  border:       5px;
+  border-radius: 10px;
+  background-color: #282738;
+  width: 300px;
+}
+
+mainbox {
+  spacing: 0px;
+  children: [message,listview];
+}
+
+message {
+    enabled:                     true;
+    margin:                      0px 50px;
+    padding:                     15px;
+    border:                      0px solid;
+    border-radius:               15px;
+    border-color:                inherit;
+    background-color:            inherit;
+    text-color:                  inherit;
+    size:                        300em;
+}
+textbox {
+    background-color:            inherit;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    placeholder-color:           inherit;
+    blink:                       true;
+    markup:                      true;
+    size:                        400em;
+    font: "JetBrainsMono Bold 15";
+
+}
+error-message {
+    padding:                     12px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                inherit;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+element {
+  background: transparent;
+  children: [ element-icon, element-text ];
+
+}
+element,element-text,element-icon, button {
+    cursor: pointer;
+}
+
+
+listview, message {
+  padding: 0.5em;
+  border-color: #282738;
+  border:        5px;
+  border-radius: 10px;
+  background-color: #282738;
+  columns: 1;
+  lines: 4;
+}
+listview {
+  border:       5px 5px 5px 5px;
+  border-radius: 10px 10px 10px 10px;
+  background-color: #353446;
+  border-color:     #282738;
+  font: "JetBrains Mono Medium";
+  scrollbar: false;
+
+}
+
+
+element {
+    border:  5px;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #353446;
+}
+element-text {
+    background-color: #353446;
+    text-color:       #FFFFFF;
+    font: "JetBrains Mono Medium";
+    margin:   0px 50px;
+}
+
+element normal.normal {
+    background-color: #353446;
+    text-color:       #E5B9C6;
+}
+element.normal.urgent {
+    background-color: #353446;
+    text-color:       #E5B9C6;
+}
+element.normal.active {
+    background-color: #353446;
+    text-color:       #E5B9C6;
+}
+element.selected.normal {
+    background-color: #E5B9C6;
+    border-color: #E5B9C6;
+    text-color:       #E5B9C6;
+}
+element.selected.urgent {
+    background-color: #E5B9C6;
+    border-color: #E5B9C6;
+    text-color:       #E5B9C6;
+}
+element.selected.active {
+    background-color: #E5B9C6;
+    border-color: #E5B9C6;
+    text-color:       #E5B9C6;
+}
+element.alternate.normal {
+    background-color: #353446;
+    text-color:       #E5B9C6;
+}
+element.alternate.urgent {
+    background-color: #353446;
+    text-color:       #E5B9C6;
+}
+element.alternate.active {
+    background-color: #353446;
+    text-color:       #E5B9C6;
+}
+
+
+element-text.selected.normal {
+    background-color: #E5B9C6;
+    border-color: #E5B9C6;
+    text-color:       #282738;
+    font: "JetBrains Mono Medium";
+}
+element-text.selected.urgent {
+    background-color: #E5B9C6;
+    border-color: #E5B9C6;
+    text-color:       #282738;
+    font: "JetBrains Mono Medium";
+}
+element-text.selected.active {
+    background-color: #E5B9C6;
+    border-color: #E5B9C6;
+    text-color:       #282738;
+    font: "JetBrains Mono Medium";
+}
+
+
+button {
+    text-color: #E5B9C6;
+    border:       0px 0px 5px ;
+    border-color: #282738;
+    border-radius:    10px 10px 0 0;
+    background-color: #282738;
+    horizontal-align: 0.5;
+}
+button selected.normal {
+    text-color: #E5B9C6;
+    margin: 0px;
+    padding: 0px;
+    border:     5px 5px 5px 5px ;
+    border-color: #282738;
+    border-radius:    10px 10px 10px 10px;
+    background-color: #353446;
+}
+
+entry {
+    placeholder: "Search here";
+    placeholder-color: #282738;
+    border-color: #353446;
+    background-color: #353446;
+    border:        10px;
+    border-radius: 2px 2px 2px 2px;
+    text-color: #E5B9C6;
+  }

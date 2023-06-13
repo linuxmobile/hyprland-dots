@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cp -r ~/Themes/Natura/. ~/Themes/Natura/.zshrc ~/ &&
+wal -i ~/Wallpaper/claudio-testa-FrlCwXwbwkk-unsplash.jpg &&
+qtile cmd-obj -o cmd -f restart 
+

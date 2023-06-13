@@ -1,0 +1,2 @@
+"use strict";(("undefined"!=typeof self?self:global).webpackChunkopen=("undefined"!=typeof self?self:global).webpackChunkopen||[]).push([[7985],{10920:(e,l,n)=>{n.r(l),n.d(l,{default:()=>s});var t=n(59496),f=n(28170);const s=t.memo((function(){const{createPlaylist:e}=(0,f.K)();return(0,t.useEffect)((()=>{e()}),[e]),null}))}}]);
+//# sourceMappingURL=xpui-routes-create-playlist.js.map

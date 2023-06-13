@@ -1,0 +1,21 @@
+#!/bin/bash
+
+options=("󱄖 Cozy" "󰞇 Sakura" "󰌪 Natura" "󱢗 Everforest")
+selected=$(printf '%s\n' "${options[@]}" | rofi -dmenu -l 4 -i -mesg "T H E M E S")
+
+case $selected in
+    "󱄖 Cozy")
+     sh ~/.config/rofi/scripts/Cozy
+        ;;
+    "󰞇 Sakura")
+      sh ~/.config/rofi/scripts/Sakura
+        ;;
+    "󰌪 Natura")
+      sh ~/.config/rofi/scripts/Natura
+        ;;
+    "󱢗 Everforest")
+      sh ~/.config/rofi/scripts/Everforest
+        ;;
+    *)
+        ;;
+esac

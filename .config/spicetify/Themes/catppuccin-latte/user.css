@@ -1,0 +1,476 @@
+/* Color Pallette */
+/* Note: These variables should be used ONLY when needed across ALL of the color palettes. */
+:root {
+  --flamingo: #dd7878;
+  --mauve: #8839ef;
+  --pink: #ea76cb;
+  --maroon: #e64553;
+  --red: #d20f39;
+  --peach: #fe640b;
+  --yellow: #df8e1d;
+  --green: #40a02b;
+  --teal: #179299;
+  --blue: #1e66f5;
+  --sky: #04a5e5;
+  --crust: #dce0e8;
+  --mantle: #e6e9ef;
+  --base: #eff1f5;
+  --surface0: #ccd0da;
+  --surface1: #bcc0cc; 
+  --overlay0: #9ca0b0;
+  ---overlay1: #8c8fa1;
+  --overlay2: #7c7f93;
+  --text: #4c4f69;
+  --lavender: #7287fd;
+  --rosewater: #dc8a78;
+}
+
+.button {
+  color: var(--text);
+}
+
+/* Buttons */
+.main-shuffleButton-button:focus:not(:focus-visible,:hover) {
+  color: var(---overlay1);
+}
+.main-shuffleButton-button {
+  color: var(---overlay1);
+}
+.main-shuffleButton-button:hover {
+  color: var(--spice-text);
+}
+.main-shuffleButton-button.main-shuffleButton-active {
+  color: var(--white);
+}
+
+.main-skipBackButton-button {
+  color: var(--white);
+}
+.main-playButton-PlayButton.main-playButton-primary {
+    color: var(--spice-player);
+}
+.main-actionBar-ActionBar.contentSpacing {
+  color: var(--text);
+}
+/* .wCl7pMTEE68v1xuZeZiB */
+.main-actionBar-ActionBarRow > div > .button {
+  color: var(--text);
+}
+
+.HbKLiGoYM4dpuK8L4TMX, .Svg-sc-1bi12j5-0.jgfuCe.X1lXSiVj0pzhQCUo_72A, .main-moreButton-button, .wCl7pMTEE68v1xuZeZiB, .w6j_vX6SF5IxSXrrkYw5 {
+  color: var(--text);
+
+}
+
+.main-actionBar-ActionBarRow > div >  .input::placeholder {
+  color: var(--text);
+}
+/* Skip button, Forward button, repeat, karoke, lyrics, spotify-connect, volume */
+.main-skipBackButton-button, .main-skipForwardButton-button, .main-repeatButton-button, .ZMXGDTbwxKJhbmEDZlYy.control-button, .Button-sc-1dqy6lx-0.hyWUsx, .control-button.iUSAh1wdhXLk9hHSbkCA, .volume-bar__icon-button.control-button {
+  color: var(--text);
+}
+
+.TypeElement-finale-textSubdued-type {
+  color: var(--text);
+}
+
+/* .Type__TypeElement-goli3j-0.cpSTHq.playback-bar__progress-time-elapsed, .Type__TypeElement-goli3j-0 cpSTHq main-playbackBarRemainingTime-container {
+  color: var(--text);
+} */
+/* Search bar placeholder */
+.QZhV0hWVKlExlKr266jo::placeholder {
+  color: var(--text);
+}/* New artist side bar */
+
+.Button-textSubdued-sm-16-buttonTertiary-condensed-useBrowserDefaultFocusStyle {
+  color: var(--spice-text) !important;
+}
+
+/* The artist venue/date and next in queue name of artist */
+.TypeElement-mesto-type {
+  color: var(--white) !important;
+}
+
+.Button-textSubdued-sm-16-buttonTertiary-condensed-isUsingKeyboard-useBrowserDefaultFocusStyle {
+  color: var(--spice-text);
+}
+
+/* Duration in album view */
+.UyzJidwrGk3awngSGIwv {
+    color: var(--white);
+}
+
+div.context-menu {
+  background-color: var(--crust);
+}
+.main-button-primary {
+    background-color: var(--spice-main);
+}
+.main-button-primary:active,
+.main-button-primary:focus,
+.main-button-primary:hover {
+    background-color: var(--spice-sidebar);
+}
+
+.main-skipForwardButton-button {
+  color: var(--white);
+}
+
+/* Generic control buttons */
+.Button-sm-16-buttonTertiary-iconOnly-isUsingKeyboard-useBrowserDefaultFocusStyle {
+  color: var(--text) !important;
+}
+
+/* Connect to device etc. */
+.control-button {
+  color: var(--white);
+}
+
+.main-view-container button:hover > div[class^='ButtonInner-sc-'] {
+    background-color: var(--spice-button);
+}
+
+.control-button-heart[aria-checked="true"],
+.main-addButton-active,
+.main-addButton-active:focus,
+.main-addButton-active:hover {
+    color: var(--red);
+}
+
+.main-addButton-active:hover {
+    -webkit-transform: scale(1.06);
+    transform: scale(1.06);
+}
+.QZhV0hWVKlExlKr266jo {
+  color: var(--text);
+}
+/* Progress bar */
+.x-progressBar-progressBarBg > div > div {
+    background-color: var(--spice-text);
+}
+
+/* Top bars */
+
+.main-topBar-topBarContainer {
+  margin-top: 10px;
+}
+.main-topBar-navLink:hover {
+  background: var(--text);
+}
+
+.main-topBar-background {
+  background-color: var(--mantle) !important;
+}
+
+/* The search icon svg */
+.mOLTJ2mxkzHJj6Y9_na_ {
+  color: var(--text);
+}
+/* Search bar */
+.x-searchInput-searchInputInput {
+  background-color: var(--surface1);
+  color: var(--text) !important;
+}
+
+.main-entityHeader-backgroundColor,
+.main-actionBarBackground-background,
+.main-view-container main[aria-label="Spotify – Web Player"] > div:first-child {
+    display: none;
+}
+
+.main-topBar-background {
+    background-color: var(--spice-main) !important;
+}
+
+.main-entityHeader-withBackgroundImage {
+    background-color: rgba(var(--spice-rgb-player), 0.2);
+}
+
+/* Sidebar */
+.main-navBar-navBar li:hover > div,
+.main-navBar-navBar li:hover > a:not(.main-navBar-navBarLinkActive),
+.spicetify-playlist-list li:hover {
+    background-color: var(--spice-main);
+}
+
+#spicetify-sticky-list li:hover > div {
+    border-radius: 4px;
+}
+
+/* Your collection, marketplace and lyrics app buttons */
+.main-navBar-navBarLink {
+  color: var(--spice-text);
+}
+
+/* Your collection svg */
+.Svg-img-24-icon.collection-icon {
+  color: var(--text);
+}
+
+.collection-icon {
+  color: var(--text);
+}
+.main-createPlaylistButton-button {
+  color: var(--spice-text);
+}
+
+.main-navBar-navBarLinkActive {
+  background-color: var(--spice-tab-active);
+}
+
+p.Type__TypeElement-goli3j-0.gAmaez.fUYMR7LuRXv0KJWFvRZA {
+    color: var(--spice-text);
+}
+span.UyzJidwrGk3awngSGIwv, .main-tag-container, .Type__TypeElement-goli3j-0.ebHsEf {
+    color: var(--spice-text);
+}
+
+
+/* Scrollbar */
+.os-theme-spotify > .os-scrollbar-horizontal,
+.os-theme-spotify > .os-scrollbar-vertical {
+    padding: 4px;
+}
+
+.os-theme-spotify.os-host-transition
+    > .os-scrollbar-horizontal
+    > .os-scrollbar-track
+    > .os-scrollbar-handle,
+.os-theme-spotify.os-host-transition
+    > .os-scrollbar-vertical
+    > .os-scrollbar-track
+    > .os-scrollbar-handle {
+    background-color: var(--decorative-base);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+    width: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #575268;
+    border-radius: 4px;
+}
+
+/* Home */
+.main-home-homeHeader {
+    display: none;
+}
+
+.main-home-content
+    > section:first-child
+    > .main-gridContainer-gridContainer
+    > div {
+    background-color: var(--spice-card);
+}
+.main-home-content
+    > section:first-child
+    > .main-gridContainer-gridContainer
+    > div:hover {
+    background-color: var(--spice-misc);
+}
+
+.main-gridContainer-gridContainer > div,
+.main-gridContainer-gridContainer > div > div > div {
+    border-radius: 6px;
+}
+
+/* Cards */
+.main-card-card {
+    border-radius: 6px;
+    background-color: var(--mantle);
+}
+
+.main-card-imageContainer {
+    margin: -16px -16px 16px -16px;
+}
+
+.main-cardImage-imageWrapper,
+.main-cardImage-image {
+    border-radius: 6px 6px 0 0;
+}
+
+/* Card secondary information: no. of songs, artist */
+.TypeElement-mesto-textSubdued-type {
+    color: var(--text);
+}
+
+/* New artist side bar */
+.Button-textSubdued-sm-16-buttonTertiary-condensed-useBrowserDefaultFocusStyle {
+  color: var(--text) !important;
+}
+
+/* The artist venue/date and next in queue name of artist */
+.TypeElement-mesto-type {
+  color: var(--white);
+}
+
+.Button-textSubdued-sm-16-buttonTertiary-condensed-isUsingKeyboard-useBrowserDefaultFocusStyle {
+  color: var(--spice-text);
+}
+
+/* Duration in album view */
+.UyzJidwrGk3awngSGIwv {
+    color: var(--white);
+}
+
+/* Settings */
+
+/* Search icon */
+.x-filterBox-searchIcon {
+  color: var(--text);
+}
+
+/* Search icon input field */
+.x-filterBox-filterInput {
+  color: var(--text);
+  background-color: var(--surface1);
+}
+
+/* Drop down lists */
+.main-dropDown-dropDown {
+  color: var(--spice-text);
+  background-color: var(--surface1);
+}
+
+/* Input fields for proxy */
+.x-settings-input {
+  background-color: var(--surface1);
+  color: var(--spice-text);
+}
+
+input:checked~.x-toggle-indicatorWrapper {
+  background-color: var(--text);
+}
+
+.TypeElement-viola-textSubdued-type {
+  color: var(--text);
+}
+input:hover:not([disabled]):not(:active)~.x-toggle-indicatorWrapper {
+  background-color: var(--spice-button-active);
+}
+
+select option:checked {
+  color: var(--spice-text);
+  font-weight: bold;
+}
+
+/* Animated equalizer */
+/* EQ color classes are specified here in case the js extension is not moved over
+ * The default green eq will be used in this case */
+.catppuccin-eq-rosewater .main-trackList-playingIcon,
+.catppuccin-eq-flamingo .main-trackList-playingIcon,
+.catppuccin-eq-mauve .main-trackList-playingIcon,
+.catppuccin-eq-pink .main-trackList-playingIcon,
+.catppuccin-eq-maroon .main-trackList-playingIcon,
+.catppuccin-eq-red .main-trackList-playingIcon,
+.catppuccin-eq-peach .main-trackList-playingIcon,
+.catppuccin-eq-yellow .main-trackList-playingIcon,
+.catppuccin-eq-green .main-trackList-playingIcon,
+.catppuccin-eq-teal .main-trackList-playingIcon,
+.catppuccin-eq-blue .main-trackList-playingIcon,
+.catppuccin-eq-sky .main-trackList-playingIcon,
+.catppuccin-eq-lavender .main-trackList-playingIcon,
+.catppuccin-eq-white .main-trackList-playingIcon {
+    background-size: cover;
+    padding-left: 100%;
+}
+
+.catppuccin-eq-rosewater .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-rosewater.gif");
+}
+.catppuccin-eq-flamingo .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-flamingo.gif");
+}
+.catppuccin-eq-mauve .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-mauve.gif");
+}
+.catppuccin-eq-pink .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-pink.gif");
+}
+.catppuccin-eq-maroon .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-maroon.gif");
+}
+.catppuccin-eq-red .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-red.gif");
+}
+.catppuccin-eq-peach .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-peach.gif");
+}
+.catppuccin-eq-yellow .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-yellow.gif");
+}
+.catppuccin-eq-green .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-green.gif");
+}
+.catppuccin-eq-teal .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-teal.gif");
+}
+.catppuccin-eq-blue .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-blue.gif");
+}
+.catppuccin-eq-sky .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-sky.gif");
+}
+.catppuccin-eq-lavender .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-lavender.gif");
+}
+.catppuccin-eq-lavender .main-trackList-playingIcon {
+    background-image: url("equalizer-animated-white.gif");
+}
+
+/* For that small dot on podcasts that notify us of new episodes */
+.main-home-content
+    > section:first-child
+    > .main-gridContainer-gridContainer
+    > div
+    span[aria-label],
+span[aria-label="New episode"],
+span[aria-label="New Podcast Episode"] {
+    background: var(--spice-accent, var(--spice-text));
+}
+
+/* Modals */
+.GenericModal[aria-label="Already added"] > div {
+    background-color: var(--spice-card);
+    color: var(--spice-subtext);
+}
+
+.GenericModal[aria-label="Already added"] button:first-child {
+    color: var(--spice-button-active);
+}
+
+.GenericModal[aria-label="Already added"] button:first-child:hover {
+    color: var(--spice-notification-error);
+}
+
+.GenericModal[aria-label="Already added"] button:last-child:hover > div {
+    background-color: var(--spice-button);
+}
+
+.main-rootlist-rootlistItemLink:link, .main-rootlist-rootlistItemLink:visited {
+    z-index: 1;
+}
+
+/*Buddy Feed theming */
+.main-buddyFeed-activityMetadata .main-buddyFeed-username a,
+.main-buddyFeed-activityMetadata .main-buddyFeed-usernameAndTimestamp {
+    color: rgba(var(--text), 0.2);
+}
+
+.main-buddyFeed-activityMetadata .main-buddyFeed-artistAndTrackName a,
+.main-buddyFeed-activityMetadata .main-buddyFeed-playbackContextLink,
+.main-buddyFeed-activityMetadata .main-buddyFeed-timestamp {
+    color: rgba(var(--spice-rgb-sidebar-text), 0.8);
+}
+
+/* Find friends button */
+.SQHCRmgNjRywo1Lt7rP3 {
+    background-color: var(--base);
+}
+
+.Button-sm-buttonSecondary-useBrowserDefaultFocusStyle {
+    background-color: var(--base);
+    color: var(--spice-text);
+    border: 1px solid var(---overlay1);
+}
