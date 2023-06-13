@@ -18,14 +18,14 @@
 
 <img align="center" src="/assets/r-unixporn.webp">
 
-### Install steps (Take care about it. Isn't a tutorial)
-
 <details>
 <summary><b>OLD SETUP</b></summary>
 
 <img align="center" src="https://i.imgur.com/QopB79H.png">
 [GRUVxYRLAND](https://github.com/linuxmobile/hyprland-dots/tree/Gruvland)
 </details>
+
+### Install steps (Take care about it. Isn't a tutorial)
 
 <details>
 
@@ -92,7 +92,7 @@ paru -S code code-features code-marketplace
 
 ```sh
 # Theme Based
-paru -S catppuccin-gtk-theme papirus-icon-theme sddm-git swaylock-effects-git 
+paru -S catppuccin-gtk-theme papirus-icon-theme sddm-git swaylock-effects-git
 ```
 
 ```sh
@@ -111,8 +111,7 @@ pipewire-jack wireplumber gst-plugin-pipewire pavucontrol
 <details>
 <summary><h3>DOTFILES</h3></summary>
 
-
-###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Paru as the AUR helper, but keep in mind that your system may require a different approach. 
+###### To get started, let's make sure we have all the necessary prerequisites. In this case, I'm using Paru as the AUR helper, but keep in mind that your system may require a different approach.
 
 ```sh
 git clone https://github.com/linuxmobile/hyprland-dots $HOME/Downloads/hyprland-dots/
