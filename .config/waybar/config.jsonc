@@ -48,8 +48,8 @@
       "on-click": "playerctl previous",
       "on-click-right": "playerctl next",
       "format-icons": {
-        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌  󰒭</span>",
-        "Paused": "<span foreground='#928374'>󰒮 󰏥  󰒭</span>"
+        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭</span>",
+        "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
       },
     },
 
@@ -62,8 +62,8 @@
       "on-click": "playerctl previous",
       "on-click-right": "playerctl next",
       "format-icons": {
-        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌  󰒭</span>",
-        "Paused": "<span foreground='#928374'>󰒮 󰏥  󰒭</span>"
+        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌 󰒭</span>",
+        "Paused": "<span foreground='#928374'>󰒮 󰏥 󰒭</span>"
       },
     },
 
