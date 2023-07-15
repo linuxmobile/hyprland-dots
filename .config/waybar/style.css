@@ -1,36 +1,37 @@
 * {
     border: none;
     border-radius: 0px;
-    /*font-family: VictorMono, Iosevka Nerd Font, Noto Sans CJK;*/
-    font-family: Iosevka, FontAwesome, Noto Sans CJK;
-    font-size: 14px;
+    /* font-family: AestheticIosevka Nerd Font Mono, Iosevka, Noto Sans CJK; */
+    font-family: LigaSFMono Nerd Font, Iosevka, FontAwesome, Noto Sans CJK;
+    font-size: 13px;
+    font-weight: bold;
     font-style: normal;
     min-height: 0;
 }
 
 window#waybar {
-    background: rgba(30, 30, 46, 0.5);
-    border-bottom: 1px solid #282828;
-    color: #f4d9e1
+    background: rgba(16,18, 19, 0.8);
+    border-bottom: 1px solid #0c0e0f;
+    color: #cdd6f4
 }
 
 #workspaces {
-	background: #282828;
+	background: #0c0e0f;
 	margin: 5px 5px 5px 5px;
   padding: 0px 5px 0px 5px;
 	border-radius: 16px;
-  border: solid 0px #f4d9e1;
+  border: solid 0px #44465c;
   font-weight: normal;
   font-style: normal;
 }
 #workspaces button {
     padding: 0px 5px;
     border-radius: 16px;
-    color: #928374;
+    color: #242f33;
 }
 
 #workspaces button.active {
-    color: #f4d9e1;
+    color: #cdd6f4;
     background-color: transparent;
     border-radius: 16px;
 }
@@ -65,7 +66,7 @@ window#waybar {
 }
 
 #tray {
-    background: #282828;
+    background: #0c0e0f;
     margin: 5px 5px 5px 5px;
     border-radius: 16px;
     padding: 0px 5px;
@@ -74,7 +75,7 @@ window#waybar {
 
 #clock {
     color: #E6B9C6;
-    background-color: #282828;
+    background-color: #0c0e0f;
     border-radius: 0px 0px 0px 24px;
     padding-left: 13px;
     padding-right: 15px;
@@ -137,8 +138,8 @@ window#waybar {
 }
 
 #custom-launcher {
-    color: #e5809e;
-    background-color: #282828;
+    color: #6791c9;
+    background-color: #0c0e0f;
     border-radius: 0px 24px 0px 0px;
     margin: 0px 0px 0px 0px;
     padding: 0 20px 0 13px;
@@ -155,7 +156,7 @@ window#waybar {
 }
 
 #custom-playerctl {
-	background: #282828;
+	background: #0c0e0f;
 	padding-left: 15px;
   padding-right: 14px;
 	border-radius: 16px;
@@ -183,7 +184,7 @@ window#waybar {
 }
 
 #window {
-    background: #282828;
+    background: #0c0e0f;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 16px;
@@ -202,7 +203,7 @@ window#waybar {
 }
 
 #cpu {
-    background-color: #282828;
+    background-color: #0c0e0f;
     /*color: #FABD2D;*/
     border-radius: 16px;
     margin: 5px;
@@ -213,7 +214,7 @@ window#waybar {
 }
 
 #memory {
-    background-color: #282828;
+    background-color: #0c0e0f;
     /*color: #83A598;*/
     border-radius: 16px;
     margin: 5px;
@@ -224,7 +225,7 @@ window#waybar {
 }
 
 #disk {
-    background-color: #282828;
+    background-color: #0c0e0f;
     /*color: #8EC07C;*/
     border-radius: 16px;
     margin: 5px;
@@ -235,7 +236,7 @@ window#waybar {
 }
 
 #custom-hyprpicker {
-    background-color: #282828;
+    background-color: #0c0e0f;
     /*color: #8EC07C;*/
     border-radius: 16px;
     margin: 5px;

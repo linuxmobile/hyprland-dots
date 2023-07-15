@@ -1,0 +1,86 @@
+[colors]
+ansi = [
+"#232526",
+"#df5b61",
+"#78b892",
+"#de8f78",
+"#6791c9",
+"#bc83e3",
+"#67afc1",
+"#e4e6e7"
+]
+background = '#0c0e0f'
+brights = [
+"#2c2e2f",
+"#e8646a",
+"#81c19b",
+"#e79881",
+"#709ad2",
+"#c58cec",
+"#70b8ca",
+"#f2f4f5"
+]
+compose_cursor = '#f2cdcd'
+cursor_bg = '#edeff0'
+cursor_border = '#232526'
+cursor_fg = '#edeff0'
+foreground = '#cdd6f4'
+scrollbar_thumb = '#edeff0'
+selection_bg = '#0c0e0f'
+selection_fg = '#edeff0'
+split = '#090909'
+visual_bell = '#313244'
+
+[colors.indexed]
+16 = '#fab387'
+17 = '#dde1e6'
+136 = '#edeff0'
+
+[colors.tab_bar]
+background = '#292137'
+inactive_tab_edge = '#313244'
+
+[colors.tab_bar.active_tab]
+bg_color = '#0c0e0f'
+fg_color = '#edeff0'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#090909'
+fg_color = '#0c0e0f'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#151515'
+fg_color = '#090909'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#151515'
+fg_color = '#090909'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#6791c9'
+fg_color = '#090909'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'linuxmobile'
+name = 'rxyhn'

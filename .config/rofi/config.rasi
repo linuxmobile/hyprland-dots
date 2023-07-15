@@ -2,18 +2,18 @@
 
 * {
   /* Default background color */
-  background-color: #282738;
-  text-color:       #E5B9C6;
+  background-color: #292A37;
+  text-color:       #78a9ff;
   font: "JetBrainsMono Bold 10";
 }
 
 
 window {
   padding: 1em;
-  border-color: #282738;
-  border:       5px;
+  border-color: #252434;
+  border:       3px;
   border-radius: 10px;
-  background-color: #282738;
+  background-color: #292A37;
 
 }
 
@@ -65,19 +65,19 @@ element,element-text,element-icon, button {
 inputbar {
   margin: 0px 10px;
   spacing: 0.4em;
-  border-color: #282738;
+  border-color: #292A37;
   border:        5px;
-  background-color: #282738;
+  background-color: #292A37;
   children: [entry,overlay,case-indicator];
 }
 
 
 listview, message {
   padding: 0.5em;
-  border-color: #282738;
+  border-color: #292A37;
   border:        5px;
   border-radius: 10px;
-  background-color: #282738;
+  background-color: #292A37;
 
   columns: 1;
   lines:   8;
@@ -86,8 +86,8 @@ listview {
   border:       0px 5px 5px 5px;
   border-radius: 10px 10px 10px 10px;
   spacing: 10px;
-  background-color: #282738;
-  border-color:     #282738;
+  background-color: #292A37;
+  border-color:     #292A37;
   scrollbar:    true;
 }
 
@@ -96,77 +96,77 @@ element {
     border:  5px;
     border-radius: 5px;
     padding: 5px;
-    border-color: #282738;
+    border-color: #292A37;
 }
 element-text {
-    background-color: #282738;
+    background-color: #292A37;
     text-color:       #FFFFFF;
     font: "JetBrains Mono Medium";
 }
 
 element normal.normal {
-    background-color: #282738;
-    text-color:       #E5B9C6;
+    background-color: #292A37;
+    text-color:       #78a9ff;
 }
 element.normal.urgent {
-    background-color: #282738;
-    text-color:       #E5B9C6;
+    background-color: #292A37;
+    text-color:       #78a9ff;
 }
 element.normal.active {
-    background-color: #282738;
-    text-color:       #E5B9C6;
+    background-color: #292A37;
+    text-color:       #78a9ff;
 }
 element.selected.normal {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #E5B9C6;
+    background-color: #78a9ff;
+    border-color: #78a9ff;
+    text-color:       #78a9ff;
 }
 element.selected.urgent {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #E5B9C6;
+    background-color: #78a9ff;
+    border-color: #78a9ff;
+    text-color:       #78a9ff;
 }
 element.selected.active {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #E5B9C6;
+    background-color: #78a9ff;
+    border-color: #78a9ff;
+    text-color:       #78a9ff;
 }
 element.alternate.normal {
-    background-color: #282738;
-    text-color:       #E5B9C6;
+    background-color: #292A37;
+    text-color:       #78a9ff;
 }
 element.alternate.urgent {
-    background-color: #282738;
-    text-color:       #E5B9C6;
+    background-color: #292A37;
+    text-color:       #78a9ff;
 }
 element.alternate.active {
-    background-color: #282738;
-    text-color:       #E5B9C6;
+    background-color: #292A37;
+    text-color:       #78a9ff;
 }
 
 
 element-text.selected.normal {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #282738;
+    background-color: #78a9ff;
+    border-color: #78a9ff;
+    text-color:       #292A37;
     font: "JetBrains Mono Medium";
 }
 element-text.selected.urgent {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #282738;
+    background-color: #78a9ff;
+    border-color: #78a9ff;
+    text-color:       #292A37;
     font: "JetBrains Mono Medium";
 }
 element-text.selected.active {
-    background-color: #E5B9C6;
-    border-color: #E5B9C6;
-    text-color:       #282738;
+    background-color: #78a9ff;
+    border-color: #78a9ff;
+    text-color:       #292A37;
     font: "JetBrains Mono Medium";
 }
 scrollbar {
     width:        4px ;
     border:       0;
-    handle-color: #E5B9C6;
+    handle-color: #78a9ff;
     handle-width: 8px ;
     padding:      0;
 }
@@ -176,29 +176,29 @@ mode-switcher {
     expand: true;
 }
 button {
-    text-color: #E5B9C6;
+    text-color: #78a9ff;
     border:       0px 0px 5px ;
-    border-color: #282738;
+    border-color: #292A37;
     border-radius:    10px 10px 0 0;
-    background-color: #282738;
+    background-color: #292A37;
     horizontal-align: 0.5;
 }
 button selected.normal {
-    text-color: #E5B9C6;
+    text-color: #78a9ff;
     margin: 0px;
     padding: 0px;
     border:     5px 5px 5px 5px ;
-    border-color: #282738;
+    border-color: #292A37;
     border-radius:    10px 10px 10px 10px;
     background-color: #353446;
 }
 
 entry {
     placeholder: "Search here";
-    placeholder-color: #282738;
+    placeholder-color: #292A37;
     border-color: #353446;
     background-color: #353446;
     border:        10px;
     border-radius: 2px 2px 2px 2px;
-    text-color: #E5B9C6;
+    text-color: #78a9ff;
   }

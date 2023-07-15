@@ -1,0 +1,85 @@
+[colors]
+ansi = [
+  '#45475a',
+  '#ec6a88',
+  '#3fc6de',
+  '#efb993',
+  '#78a9ff',
+  '#be95ff',
+  '#6be6e6',
+  '#bac2de',
+]
+background = '#292A37'
+brights = [
+  '#585b70',
+  '#ec6a88',
+  '#3fc6de',
+  '#efb993',
+  '#78a9ff',
+  '#be95ff',
+  '#6be6e6',
+  '#a6adc8',
+]
+compose_cursor = '#f2cdcd'
+cursor_bg = '#dde1e6'
+cursor_border = '#dde1e6'
+cursor_fg = '#292137'
+foreground = '#cdd6f4'
+scrollbar_thumb = '#585b70'
+selection_bg = '#585b70'
+selection_fg = '#cdd6f4'
+split = '#6c7086'
+visual_bell = '#313244'
+
+[colors.indexed]
+16 = '#fab387'
+17 = '#dde1e6'
+
+[colors.tab_bar]
+background = '#292137'
+inactive_tab_edge = '#313244'
+
+[colors.tab_bar.active_tab]
+bg_color = '#cba6f7'
+fg_color = '#292137'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab]
+bg_color = '#252632'
+fg_color = '#cdd6f4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.inactive_tab_hover]
+bg_color = '#292A37'
+fg_color = '#cdd6f4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab]
+bg_color = '#313244'
+fg_color = '#cdd6f4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[colors.tab_bar.new_tab_hover]
+bg_color = '#45475a'
+fg_color = '#cdd6f4'
+intensity = 'Normal'
+italic = false
+strikethrough = false
+underline = 'None'
+
+[metadata]
+aliases = []
+author = 'linuxmobile'
+name = 'Jabuti Dark'

@@ -5,13 +5,14 @@ local function font_with_fallback(name, params)
 	return wezterm.font_with_fallback(names, params)
 end
 
-local font_name = "JetBrainsMonoNL NF"
+-- local font_name = "LigaSFMono Nerd Font"
+local font_name = "AestheticIosevka Nerd Font Mono"
+-- local font_name = "CartographCF Nerd Font"
 
 return {
 	-- OpenGL for GPU acceleration, Software for CPU
 	front_end = "OpenGL",
-
-	color_scheme = 'Catppuccin Mocha',
+  color_scheme = 'rxyhn',
 
 	-- Font config
 	font = font_with_fallback(font_name),
@@ -35,7 +36,7 @@ return {
 	dpi = 96.0,
 
 	-- Cursor style
-	default_cursor_style = "BlinkingUnderline",
+	default_cursor_style = "SteadyBar",
 
 	-- X11
 	enable_wayland = true,
@@ -158,7 +159,6 @@ return {
 	-- General
 	automatically_reload_config = true,
 	inactive_pane_hsb = { saturation = 1.0, brightness = 1.0 },
-	window_background_opacity = 0.5,
+	window_background_opacity = 1.0,
 	window_close_confirmation = "NeverPrompt",
-  window_frame = { active_titlebar_bg = "#45475a", font = font_with_fallback(font_name, { bold = true }) },
 }

@@ -7,8 +7,8 @@ _SCREENSHOT_DIR_=$HOME/Pictures/Screenshots
 _ORIGINAL_DIR_=$_SCREENSHOT_DIR_/Original
 _LOG_FILE_="$_SCREENSHOT_DIR_/.screensht.log"
 # Color
-_FG_COLOR_='#cdd6f4'
-_BG_COLOR_='#f5c2e7'
+_FG_COLOR_='#edeff0'
+_BG_COLOR_='#232F3E'
 _BG_SIZE_=10
 # Border Size Applied when value greater than or equal 3
 _BORDER_SIZE_=0
@@ -17,10 +17,10 @@ _ROUNDED_CORNER_=8
 # Author Config
 _AUTHOR_POST_=( 'South' '+0+15' )
 _AUTHOR_NAME_=" $USER"
-_AUTHOR_COLOR_='#1e1e2e'
+_AUTHOR_COLOR_='#c7d1ff'
 # Get Lists Font With "convert -list font | grep -iE 'font:.*' | nl"
-_FONT_SIZE_=12
-_FONT_='JetBrainsMonoNL-NFM-Bold'
+_FONT_SIZE_=11
+_FONT_='AestheticIosevka-Nerd-Font-Complete'
 
 function check() {
     if [[ $? -eq 1 && ${PIPESTATUS[0]} -eq 1 ]]; then

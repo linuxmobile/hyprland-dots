@@ -6,9 +6,21 @@
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
-    "modules-left": ["custom/launcher", "wlr/workspaces", "custom/playerctl", "custom/playerlabel"],
-    "modules-center": ["cpu", "memory", "disk"],
-    "modules-right": ["tray", "custom/randwall", "network", "pulseaudio", "clock"],
+    "modules-left": [
+      "custom/launcher",
+      "wlr/workspaces",
+      "custom/playerctl",
+      "custom/playerlabel"
+    ],
+    "modules-center": [
+      "cpu", 
+      "memory", 
+      "disk"
+    ],
+    "modules-right": [
+      "tray", 
+      "pulseaudio", 
+      "clock"],
     // Modules configuration
 	"clock": {
 		"format": " {:%H:%M}",
@@ -22,22 +34,22 @@
         "active-only": false,
         "all-outputs": true,
         "disable-scroll": false,
-        "on-scroll-up": "hyprctl dispatch workspace -1",
-        "on-scroll-down": "hyprctl dispatch workspace +1",
+        "on-scroll-up": "hyprctl dispatch workspace e-1",
+        "on-scroll-down": "hyprctl dispatch workspace e+1",
 		"format": "{icon}",
 		"on-click": "activate",
 		"format-icons": {
-//			"1": "一",
-//			"2": "二",
-//			"3": "三",
-//			"4": "四",
-//			"5": "五",
-			"urgent": "",
-			"active": "",
-			"default": "󰧞",
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "urgent": "",
+            "active": "",
+            "default": "",
     "sort-by-number": true
-    },
-    },
+    }
+  },
 
     "custom/playerctl": {
       "format": "{icon}",
@@ -48,9 +60,9 @@
       "on-click": "playerctl previous",
       "on-click-right": "playerctl next",
       "format-icons": {
-        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌  󰒭</span>",
-        "Paused": "<span foreground='#928374'>󰒮 󰏥  󰒭</span>"
-      },
+        "Playing": "<span foreground='#6791eb'>󰒮 󰐌 󰒭</span>",
+        "Paused": "<span foreground='#cdd6f4'>󰒮 󰏥 󰒭</span>"
+      }
     },
 
     "custom/playerlabel": {
@@ -62,9 +74,9 @@
       "on-click": "playerctl previous",
       "on-click-right": "playerctl next",
       "format-icons": {
-        "Playing": "<span foreground='#E5B9C6'>󰒮 󰐌  󰒭</span>",
-        "Paused": "<span foreground='#928374'>󰒮 󰏥  󰒭</span>"
-      },
+        "Playing": "<span foreground='#6791eb'>󰒮 󰐌 󰒭</span>",
+        "Paused": "<span foreground='#cdd6f4'>󰒮 󰏥 󰒭</span>"
+      }
     },
 
 	"battery": {
@@ -98,7 +110,7 @@
     "format": "󰋊 {}%",
     "format-alt": "󰋊 {used}/{total} GiB",
     "interval": 5,
-    "path": "/mnt/Datos"
+    "path": "/"
   },
 	
 	"network": {
@@ -119,7 +131,7 @@
 	"backlight": {
         // "device": "acpi_video1",
 	"format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
 //	"on-scroll-up":,
 //	"on-scroll-down":,
 	},
@@ -142,7 +154,7 @@
     "on-click-right": "bash $HOME/.config/hypr/wall.sh"
   },
   "custom/launcher": {
-    "format": "󰈸",
+    "format": "",
     "on-click": "bash $HOME/.config/rofi/launcher.sh",
 //    "on-click": "wofi --show drun -I -a -n -W 500 -H 376 -s ~/.config/wofi/themes/gruvbox.css",
     "on-click-right": "bash $HOME/.config/rofi/run.sh"  
@@ -163,6 +175,5 @@
     "format": "󰈋",
     "on-click": "hyprpicker -a -f hex",
     "on-click-right": "hyprpicker -a -f rgb"
-  },
   }
 }

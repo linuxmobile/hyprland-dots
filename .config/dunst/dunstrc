@@ -12,7 +12,7 @@ horizontal_padding = 8
 text_icon_padding = 0
 frame_width = 2
 
-frame_color = "#f5c2e7"
+frame_color = "#17293A"
 separator_color = frame
 
 sort = yes
@@ -40,17 +40,17 @@ browser = /usr/bin/firefox --new-tab
 title = Dunst
 class = Dunst
 
-corner_radius = 10
+corner_radius = 0
 timeout = 5
 [urgency_low]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+background = "#0c0e0f"
+foreground = "#cdd6f4"
 
 [urgency_normal]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
+background = "#0c0e0f"
+foreground = "#cdd6f4"
 
 [urgency_critical]
-background = "#1E1E2E"
-foreground = "#CDD6F4"
-frame_color = "#FAB387"
+background = "#0c0e0f"
+foreground = "#cdd6f4"
+frame_color = "#efb993"
