@@ -77,7 +77,7 @@ xwaylandvideobridge-cursor-mode-2-git cliphist qt5-imageformats qt5ct
 ```sh
 ## CLI & Tools
 paru -S btop cava neofetch noise-suppression-for-voice   \
-rofi-lbonn-wayland-git rofi-emoji starship zsh viewnior
+rofi-lbonn-wayland-git rofi-emoji starship zsh viewnior ocs-url
 ```
 
 ```sh
@@ -93,7 +93,7 @@ paru -S code code-features code-marketplace
 
 ```sh
 # Theme Based
-paru -S catppuccin-gtk-theme-macchiato catppuccin-gtk-theme-mocha papirus-icon-theme sddm-git swaylock-effects-git
+paru -S catppuccin-gtk-theme-macchiato catppuccin-gtk-theme-mocha papirus-icon-theme sddm-git swaylock-effects-git kvantum kvantum-theme-catppuccin-git
 ```
 
 ```sh
