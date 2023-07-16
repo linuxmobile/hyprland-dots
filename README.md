@@ -64,7 +64,7 @@ dunst nwg-look wf-recorder wlogout wlsunset
 ## Dependencies
 paru -S colord ffmpegthumbnailer gnome-keyring grimblast-git gtk-engine-murrine \
 imagemagick kvantum pamixer playerctl polkit-kde-agent qt5-quickcontrols        \
-qt5-quickcontrols2 qt5-wayland qt6-wayland sway-bg ttf-font-awesome tumbler     \
+qt5-quickcontrols2 qt5-wayland qt6-wayland swaybg ttf-font-awesome tumbler     \
 ttf-jetbrains-mono ttf-icomoon-feather xdg-desktop-portal-hyprland-git xdotool  \
 xwaylandvideobridge-cursor-mode-2-git cliphist qt5-imageformats qt5ct
 ```
@@ -93,7 +93,7 @@ paru -S code code-features code-marketplace
 
 ```sh
 # Theme Based
-paru -S catppuccin-gtk-theme papirus-icon-theme sddm-git swaylock-effects-git
+paru -S catppuccin-gtk-theme-macchiato catppuccin-gtk-theme-mocha papirus-icon-theme sddm-git swaylock-effects-git
 ```
 
 ```sh
