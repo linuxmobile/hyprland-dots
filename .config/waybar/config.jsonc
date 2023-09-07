@@ -6,7 +6,7 @@
     "margin-bottom": 0,
     "margin-left": 0,
     "margin-right": 0,
-    "modules-left": ["custom/launcher", "wlr/workspaces", "custom/playerctl", "custom/playerlabel"],
+    "modules-left": ["custom/launcher", "hyprland/workspaces", "custom/playerctl", "custom/playerlabel"],
     "modules-center": ["cpu", "memory", "disk"],
     "modules-right": ["tray", "custom/randwall", "network", "pulseaudio", "clock"],
     // Modules configuration
@@ -18,7 +18,7 @@
 	},
 	
 
-	"wlr/workspaces": {
+	"hyprland/workspaces": {
         "active-only": false,
         "all-outputs": true,
         "disable-scroll": false,
