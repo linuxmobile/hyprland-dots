@@ -49,7 +49,7 @@
 
 ```sh
 ## Hyprland Stuff
-paru -S hyprland-git hyprpicker-git waybar-hyprland-git \
+paru -S hyprland-git hyprpicker-git waybar-git \
 dunst nwg-look wf-recorder wlogout wlsunset
 ```
 
