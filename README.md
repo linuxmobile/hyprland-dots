@@ -135,4 +135,5 @@ _Beauty community: [r/unixporn](https://www.reddit.com/r/unixporn)._
 
 © [Owl4ce](https://github.com/owl4ce) © [Ilham25](https://github.com/ilham25) ©
 [Siduck](https://github.com/siduck) © [NvChad](https://github.com/NvChad) ©
-[Rxyhn](https://github.com/rxyhn) © [AmitGold](https://github.com/AmitGolden)
+[Rxyhn](https://github.com/rxyhn) © [AmitGold](https://github.com/AmitGolden) ©
+[Anufrievroman](https://github.com/anufrievroman)
