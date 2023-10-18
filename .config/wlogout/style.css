@@ -58,3 +58,9 @@ button:focus {
 #reboot:focus {
     background-image: image(url("./restart-hover.png"));
 }
+#hibernate {
+    background-image: image(url("./hibernate.png"));
+}
+#hibernate:focus {
+    background-image: image(url("./hibernate-hover.png"));
+}
